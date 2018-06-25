@@ -94,7 +94,9 @@
 
     
 
-     
+    
+
+    
 
     
 
@@ -108,7 +110,9 @@
 
     
 
-    <h4 class="name" id="directions"><span class="type-signature"></span>directions<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".directions"><span class="type-signature"></span>.directions<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -800,12 +804,16 @@
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="distanceMatrix"><span class="type-signature"></span>distanceMatrix<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".distanceMatrix"><span class="type-signature"></span>.distanceMatrix<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -1365,12 +1373,16 @@
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="elevation"><span class="type-signature"></span>elevation<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".elevation"><span class="type-signature"></span>.elevation<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -1586,12 +1598,16 @@
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="elevationAlongPath"><span class="type-signature"></span>elevationAlongPath<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".elevationAlongPath"><span class="type-signature"></span>.elevationAlongPath<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -1789,7 +1805,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_apis_elevation.js.html">lib/apis/elevation.js</a>, <a href="lib_apis_elevation.js.html#line40">line 40</a>
+        <a href="lib_apis_elevation.js.html">lib/apis/elevation.js</a>, <a href="lib_apis_elevation.js.html#line41">line 41</a>
     </li></ul></dd>
     
 
@@ -1833,12 +1849,350 @@
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="geocode"><span class="type-signature"></span>geocode<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".findPlace"><span class="type-signature"></span>.findPlace<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A Find Place request takes a text input, and returns a place.
+The text input can be any kind of Places data, for example,
+a name, address, or phone number.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>query</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>input</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>inputtype</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>language</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fields</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;string></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ResponseCallback.html">ResponseCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Callback function for handling the result</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line21">line 21</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="RequestHandle.html">RequestHandle</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".geocode"><span class="type-signature"></span>.geocode<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -2316,12 +2670,16 @@
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="geolocate"><span class="type-signature"></span>geolocate<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".geolocate"><span class="type-signature"></span>.geolocate<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -2749,12 +3107,16 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="nearestRoads"><span class="type-signature"></span>nearestRoads<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".nearestRoads"><span class="type-signature"></span>.nearestRoads<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -2926,7 +3288,7 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_apis_roads.js.html">lib/apis/roads.js</a>, <a href="lib_apis_roads.js.html#line43">line 43</a>
+        <a href="lib_apis_roads.js.html">lib/apis/roads.js</a>, <a href="lib_apis_roads.js.html#line44">line 44</a>
     </li></ul></dd>
     
 
@@ -2970,12 +3332,16 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="place"><span class="type-signature"></span>place<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".place"><span class="type-signature"></span>.place<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -3123,6 +3489,39 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
         </tr>
 
     
+
+        <tr>
+            
+                <td class="name"><code>fields</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;string></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
     </tbody>
 </table>
 
@@ -3190,7 +3589,7 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line132">line 132</a>
+        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line182">line 182</a>
     </li></ul></dd>
     
 
@@ -3234,12 +3633,16 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="places"><span class="type-signature"></span>places<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".places"><span class="type-signature"></span>.places<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -3718,7 +4121,7 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line21">line 21</a>
+        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line65">line 65</a>
     </li></ul></dd>
     
 
@@ -3762,12 +4165,16 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="placesAutoComplete"><span class="type-signature"></span>placesAutoComplete<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".placesAutoComplete"><span class="type-signature"></span>.placesAutoComplete<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -3855,6 +4262,37 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
         <tr>
             
                 <td class="name"><code>input</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sessiontoken</code></td>
             
 
             <td class="type">
@@ -4180,7 +4618,7 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line176">line 176</a>
+        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line236">line 236</a>
     </li></ul></dd>
     
 
@@ -4224,12 +4662,16 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="placesNearby"><span class="type-signature"></span>placesNearby<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".placesNearby"><span class="type-signature"></span>.placesNearby<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -4741,7 +5183,7 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line58">line 58</a>
+        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line103">line 103</a>
     </li></ul></dd>
     
 
@@ -4785,12 +5227,16 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="placesPhoto"><span class="type-signature"></span>placesPhoto<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".placesPhoto"><span class="type-signature"></span>.placesPhoto<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -5038,7 +5484,7 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line153">line 153</a>
+        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line212">line 212</a>
     </li></ul></dd>
     
 
@@ -5082,12 +5528,16 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="placesQueryAutoComplete"><span class="type-signature"></span>placesQueryAutoComplete<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".placesQueryAutoComplete"><span class="type-signature"></span>.placesQueryAutoComplete<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -5401,7 +5851,7 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line210">line 210</a>
+        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line273">line 273</a>
     </li></ul></dd>
     
 
@@ -5445,12 +5895,16 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="placesRadar"><span class="type-signature"></span>placesRadar<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".placesRadar"><span class="type-signature"></span>.placesRadar<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -5894,7 +6348,7 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line97">line 97</a>
+        <a href="lib_apis_places.js.html">lib/apis/places.js</a>, <a href="lib_apis_places.js.html#line146">line 146</a>
     </li></ul></dd>
     
 
@@ -5938,12 +6392,16 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="reverseGeocode"><span class="type-signature"></span>reverseGeocode<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".reverseGeocode"><span class="type-signature"></span>.reverseGeocode<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -6259,7 +6717,7 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_apis_geocode.js.html">lib/apis/geocode.js</a>, <a href="lib_apis_geocode.js.html#line52">line 52</a>
+        <a href="lib_apis_geocode.js.html">lib/apis/geocode.js</a>, <a href="lib_apis_geocode.js.html#line53">line 53</a>
     </li></ul></dd>
     
 
@@ -6303,12 +6761,16 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="snappedSpeedLimits"><span class="type-signature"></span>snappedSpeedLimits<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".snappedSpeedLimits"><span class="type-signature"></span>.snappedSpeedLimits<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -6523,7 +6985,7 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_apis_roads.js.html">lib/apis/roads.js</a>, <a href="lib_apis_roads.js.html#line86">line 86</a>
+        <a href="lib_apis_roads.js.html">lib/apis/roads.js</a>, <a href="lib_apis_roads.js.html#line89">line 89</a>
     </li></ul></dd>
     
 
@@ -6567,12 +7029,16 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="snapToRoads"><span class="type-signature"></span>snapToRoads<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".snapToRoads"><span class="type-signature"></span>.snapToRoads<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -6831,12 +7297,16 @@ For a detailed guide, see https://developers.google.com/maps/documentation/geolo
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="speedLimits"><span class="type-signature"></span>speedLimits<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".speedLimits"><span class="type-signature"></span>.speedLimits<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -7052,7 +7522,7 @@ requests using a path parameter, use the snappedSpeedLimits method.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="lib_apis_roads.js.html">lib/apis/roads.js</a>, <a href="lib_apis_roads.js.html#line63">line 63</a>
+        <a href="lib_apis_roads.js.html">lib/apis/roads.js</a>, <a href="lib_apis_roads.js.html#line65">line 65</a>
     </li></ul></dd>
     
 
@@ -7096,12 +7566,16 @@ requests using a path parameter, use the snappedSpeedLimits method.
 
 
 
+
+
         
             
 
     
 
-    <h4 class="name" id="timezone"><span class="type-signature"></span>timezone<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
+    <h4 class="name" id=".timezone"><span class="type-signature"></span>.timezone<span class="signature">(query, callback)</span><span class="type-signature"> &rarr; {<a href="RequestHandle.html">RequestHandle</a>}</span></h4>
+    
 
     
 
@@ -7396,6 +7870,8 @@ requests using a path parameter, use the snappedSpeedLimits method.
 
 
 
+
+
         
     
 
@@ -7412,13 +7888,13 @@ requests using a path parameter, use the snappedSpeedLimits method.
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-@google_maps.html">@google/maps</a></li></ul><h3>Interfaces</h3><ul><li><a href="ClientResponse.html">ClientResponse</a></li><li><a href="GoogleMapsClient.html">GoogleMapsClient</a></li><li><a href="LatLng.html">LatLng</a></li><li><a href="RequestHandle.html">RequestHandle</a></li><li><a href="ResponseCallback.html">ResponseCallback</a></li></ul><h3>Global</h3><ul><li><a href="global.html#utils">utils</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-@google_maps.html">@google/maps</a></li></ul><h3>Interfaces</h3><ul><li><a href="ClientResponse.html">ClientResponse</a></li><li><a href="GoogleMapsClient.html">GoogleMapsClient</a></li><li><a href="LatLng.html">LatLng</a></li><li><a href="RequestHandle.html">RequestHandle</a></li><li><a href="ResponseCallback.html">ResponseCallback</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Thu Mar 15 2018 13:53:44 GMT+1100 (AEDT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Mon Jun 25 2018 15:59:57 GMT+1000 (AEST)
 </footer>
 
 <script> prettyPrint(); </script>

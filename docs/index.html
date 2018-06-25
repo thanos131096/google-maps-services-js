@@ -19,6 +19,14 @@
 
     <h1 class="page-title">Home</h1>
 
+    
+
+
+
+    
+
+
+    <h3>@google/maps 0.5.0</h3>
 
 
 
@@ -26,18 +34,10 @@
 
 
 
-    <h3>@google/maps 0.4.6</h3>
 
 
 
-
-
-
-
-
-
-
-
+    
 
 
 
@@ -46,11 +46,11 @@
         <article><p>Welcome to the reference docs for the <a href="https://github.com/googlemaps/google-maps-services-js">Node.js Client for Google Maps
 Services</a>.</p>
 <h2>Quick Start</h2><p>Create a new client object by calling
-<a href="module-@google_maps.html#.createClient"><code>createClient()</code></a>:</p>
+<a href="https://googlemaps.github.io/google-maps-services-js/docs/module-@google_maps.html#.createClient"><code>createClient()</code></a>:</p>
 <pre class="prettyprint source lang-js"><code>var googleMapsClient = require('@google/maps').createClient({
   key: 'your API key here'
 });</code></pre><p>Make requests to the Google Maps APIs by calling methods on the
-<a href="GoogleMapsClient.html">client object</a>:</p>
+<a href="https://googlemaps.github.io/google-maps-services-js/docs/GoogleMapsClient.html">client object</a>:</p>
 <pre class="prettyprint source lang-js"><code>// Geocode an address.
 googleMapsClient.geocode({
   address: '1600 Amphitheatre Parkway, Mountain View, CA'
@@ -59,7 +59,7 @@ googleMapsClient.geocode({
     console.log(response.json.results);
   }
 });</code></pre><h2>Initializing the client library</h2><p>You can specify a number of options to the
-<a href="module-@google_maps.html#.createClient"><code>createClient()</code></a>
+<a href="https://googlemaps.github.io/google-maps-services-js/docs/module-@google_maps.html#.createClient"><code>createClient()</code></a>
 function:</p>
 <ul>
 <li>Specify an API key or a client ID (required)</li>
@@ -68,17 +68,17 @@ function:</p>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>
 API. This leaves you free to choose your Promise implementation.</li>
 </ul>
-<h2>Making API requests</h2><p>Each <a href="GoogleMapsClient.html">API method</a> accepts two arguments:</p>
+<h2>Making API requests</h2><p>Each <a href="https://googlemaps.github.io/google-maps-services-js/docs/GoogleMapsClient.html">API method</a> accepts two arguments:</p>
 <ul>
 <li>a <code>query</code> object; and</li>
-<li>a <a href="ResponseCallback.html"><code>callback</code> function</a>. The callback is called
+<li>a <a href="https://googlemaps.github.io/google-maps-services-js/docs/ResponseCallback.html"><code>callback</code> function</a>. The callback is called
 with either the JSON response object or an error object.</li>
 </ul>
-<p>Each API method returns a <a href="RequestHandle.html"><code>RequestHandle</code></a>. The handle can
+<p>Each API method returns a <a href="https://googlemaps.github.io/google-maps-services-js/docs/RequestHandle.html"><code>RequestHandle</code></a>. The handle can
 be used to cancel the request, or to obtain a Promise for the response.</p>
 <p>NOTE: Promises are only available if you supply a
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>
-constructor to the <a href="module-@google_maps.html#.createClient"><code>createClient()</code></a> method. You must also chain <code>.asPromise()</code> to a method before any <code>.then()</code> or <code>.catch()</code> methods.
+constructor to the <a href="https://googlemaps.github.io/google-maps-services-js/docs/module-@google_maps.html#.createClient"><code>createClient()</code></a> method. You must also chain <code>.asPromise()</code> to a method before any <code>.then()</code> or <code>.catch()</code> methods.
 For example: </p>
 <pre class="prettyprint source lang-js"><code>// Create client with a Promise constructor
 const googleMapsClient = require('@google/maps').createClient({
@@ -95,9 +95,9 @@ googleMapsClient.geocode({address: '1600 Amphitheatre Parkway, Mountain View, CA
     console.log(err);
   });</code></pre><h2>Learn More</h2><ul>
 <li>Browse the documentation for each of the
-<a href="GoogleMapsClient.html">API methods</a></li>
+<a href="https://googlemaps.github.io/google-maps-services-js/docs/GoogleMapsClient.html">API methods</a></li>
 <li>Detailed documentation on the underlying web services and the JSON responses can be found on the
-<a href="https://developers.google.com/maps/documentation/webservices/">Google Maps API Web Services site</a>.</li>
+<a href="https://developers.google.com/maps/apis-by-platform#web_service_apis">Google Maps API Web Services site</a>.</li>
 <li>Read the source code on
 <a href="https://github.com/googlemaps/google-maps-services-js">github</a>.</li>
 </ul></article>
@@ -111,13 +111,13 @@ googleMapsClient.geocode({address: '1600 Amphitheatre Parkway, Mountain View, CA
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-@google_maps.html">@google/maps</a></li></ul><h3>Interfaces</h3><ul><li><a href="ClientResponse.html">ClientResponse</a></li><li><a href="GoogleMapsClient.html">GoogleMapsClient</a></li><li><a href="LatLng.html">LatLng</a></li><li><a href="RequestHandle.html">RequestHandle</a></li><li><a href="ResponseCallback.html">ResponseCallback</a></li></ul><h3>Global</h3><ul><li><a href="global.html#utils">utils</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-@google_maps.html">@google/maps</a></li></ul><h3>Interfaces</h3><ul><li><a href="ClientResponse.html">ClientResponse</a></li><li><a href="GoogleMapsClient.html">GoogleMapsClient</a></li><li><a href="LatLng.html">LatLng</a></li><li><a href="RequestHandle.html">RequestHandle</a></li><li><a href="ResponseCallback.html">ResponseCallback</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Thu Mar 15 2018 13:53:44 GMT+1100 (AEDT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Mon Jun 25 2018 15:59:57 GMT+1000 (AEST)
 </footer>
 
 <script> prettyPrint(); </script>
